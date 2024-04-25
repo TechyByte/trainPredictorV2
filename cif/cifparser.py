@@ -31,6 +31,8 @@ db=MySQLdb.connect(host=config.db_host,user=config.db_user,passwd=config.db_pass
 c=db.cursor()
 i = 0
 
+
+
 def convert_time(in_time):
 	if in_time.strip() == '':
 		return None
@@ -55,6 +57,10 @@ def convert_date(in_date):
 		else:
 			year += 2000
 		return date(year, month, day)
+
+# TODO: Download latest CIF file automatically
+
+# TODO: Purge database
 
 ######################
 ## ATOC Data Import ##
