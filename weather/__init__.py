@@ -33,7 +33,7 @@ def get_current_weather_at(tiploc, source="openmeteo"):
 
 
 def _get_openweather_forecast(node, tiploc):
-    # Parameters to include in the API call
+    # Parameters to include in the API calls
     params = {
         "lat": node["latlong"][0],
         "lon": node["latlong"][1],
